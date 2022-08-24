@@ -22,7 +22,7 @@ author:
     - ul. Wieniawskiego 1
     - 61-712 Poznań, Poland
 abstract: >
-  In this paper we provide an overview of R packages that allow to fit various single-source capture-recapture models. 
+  In this paper we provide an overview of R packages that allow to fit various single-source capture-recapture (SSCR) models. In genera, SSCR approaches assume that capture history follows certain distribution (e.g. negative binomial, poisson, one-inflated poisson) but the observational data consist only positive counts i.e. we observe zero truncated distributions. 
 preamble: |
   \include{symbols.tex}
   
@@ -44,6 +44,18 @@ This section may contain a figure such as Figure \ref{fig:Rlogo}.
 ```{r, Rlogo, echo=FALSE, fig.cap='The logo of R.', out.width='2in', fig.align='center', fig.pos='htbp'}
 knitr::include_graphics('Rlogo.pdf')
 ```
+
+### Truncated discrete distributions
+
+In order to use truncated distributions we may use default functions truncaed at 0 
+
+### countreg
+
+### VGAM
+
+The most advanced
+
+### brms and stan
 
 ## Case studies
 
