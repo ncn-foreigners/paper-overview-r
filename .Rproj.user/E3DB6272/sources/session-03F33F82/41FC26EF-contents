@@ -22,7 +22,7 @@ author:
     - ul. Wieniawskiego 1
     - 61-712 Poznań, Poland
 abstract: >
-  In this paper we provide an overview of R packages that allow to fit various single-source capture-recapture (SSCR) models. In genera, SSCR approaches assume that capture history follows certain distribution (e.g. negative binomial, poisson, one-inflated poisson) but the observational data consist only positive counts i.e. we observe zero truncated distributions. 
+  In this paper we provide an overview of R packages that allow fitting various single-source capture-recapture (SSCR) models. In general, SSCR approaches assume that capture history follows certain discrete distribution (e.g. negative binomial, poisson, one-inflated poisson) but the observational data consist of only positive counts i.e. we observe zero truncated distributions. In this paper we cover both frequentist and bayesian approach, provide functions for population size estimation as well as analytical and bootstrap estimators. The paper focus on `extraDistr`, `countreg`, `VGAM` and `brms` packages that are suited for the SSCR models. 
 preamble: |
   \include{symbols.tex}
   
@@ -59,8 +59,6 @@ In order to use truncated distributions we may use default functions truncaed at
 The most advanced
 
 ### stan and brms
-
-
 
 ## Case studies
 
