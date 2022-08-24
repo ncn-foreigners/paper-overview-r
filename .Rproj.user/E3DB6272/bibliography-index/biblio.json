@@ -1,0 +1,54 @@
+{
+    "sources": [
+        {
+            "URL": "http://www.R-project.org/",
+            "author": [
+                {
+                    "literal": "R Core Team"
+                }
+            ],
+            "id": "R",
+            "issued": {
+                "date-parts": [
+                    [
+                        2012
+                    ]
+                ]
+            },
+            "note": "ISBN 3-900051-07-0",
+            "publisher": "R Foundation for Statistical Computing",
+            "publisher-place": "Vienna, Austria",
+            "title": "R: A language and environment for statistical computing",
+            "title-short": "R",
+            "type": "book"
+        },
+        {
+            "author": [
+                {
+                    "family": "Ihaka",
+                    "given": "Ross"
+                },
+                {
+                    "family": "Gentleman",
+                    "given": "Robert"
+                }
+            ],
+            "container-title": "Journal of Computational and Graphical Statistics",
+            "id": "ihaka:1996",
+            "issue": "3",
+            "issued": {
+                "date-parts": [
+                    [
+                        1996
+                    ]
+                ]
+            },
+            "page": "299-314",
+            "title": "R: A language for data analysis and graphics",
+            "title-short": "R",
+            "type": "article-journal",
+            "volume": "5"
+        }
+    ],
+    "project_biblios": []
+}
