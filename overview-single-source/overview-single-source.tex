@@ -6,12 +6,16 @@ models}
 \maketitle
 
 \abstract{%
-In this paper we provide an overview of R packages that allow to fit
-various single-source capture-recapture (SSCR) models. In genera, SSCR
-approaches assume that capture history follows certain distribution
-(e.g.~negative binomial, poisson, one-inflated poisson) but the
-observational data consist only positive counts i.e.~we observe zero
-truncated distributions.
+In this paper we provide an overview of R packages that allow fitting
+various single-source capture-recapture (SSCR) models. In general, SSCR
+approaches assume that capture history follows certain discrete
+distribution (e.g.~negative binomial, poisson, one-inflated poisson) but
+the observational data consist of only positive counts i.e.~we observe
+zero truncated distributions. In this paper we cover both frequentist
+and bayesian approach, provide functions for population size estimation
+as well as analytical and bootstrap estimators. The paper focus on
+\texttt{extraDistr}, \texttt{countreg}, \texttt{VGAM} and \texttt{brms}
+packages that are suited for the SSCR models.
 }
 
 \hypertarget{introduction}{%
@@ -50,6 +54,104 @@ distributions}\label{truncated-discrete-distributions}}
 In order to use truncated distributions we may use default functions
 truncaed at 0
 
+Loading required packages
+
+\begin{Schunk}
+\begin{Sinput}
+library(extraDistr)
+library(countreg)
+\end{Sinput}
+\begin{Soutput}
+#> Loading required package: MASS
+\end{Soutput}
+\begin{Soutput}
+#> Warning: package 'MASS' was built under R version 4.1.2
+\end{Soutput}
+\begin{Sinput}
+library(VGAM)
+\end{Sinput}
+\begin{Soutput}
+#> Warning: package 'VGAM' was built under R version 4.1.2
+\end{Soutput}
+\begin{Soutput}
+#> Loading required package: stats4
+\end{Soutput}
+\begin{Soutput}
+#> Loading required package: splines
+\end{Soutput}
+\begin{Soutput}
+#> 
+#> Attaching package: 'VGAM'
+\end{Soutput}
+\begin{Soutput}
+#> The following objects are masked from 'package:countreg':
+#> 
+#>     dzipois, pzipois, qzipois, rzipois
+\end{Soutput}
+\begin{Soutput}
+#> The following objects are masked from 'package:extraDistr':
+#> 
+#>     dfrechet, dgev, dgompertz, dgpd, dgumbel, dhuber, dkumar, dlaplace,
+#>     dlomax, dpareto, drayleigh, dskellam, dslash, pfrechet, pgev,
+#>     pgompertz, pgpd, pgumbel, phuber, pkumar, plaplace, plomax,
+#>     ppareto, prayleigh, pslash, qfrechet, qgev, qgompertz, qgpd,
+#>     qgumbel, qhuber, qkumar, qlaplace, qlomax, qpareto, qrayleigh,
+#>     rfrechet, rgev, rgompertz, rgpd, rgumbel, rhuber, rkumar, rlaplace,
+#>     rlomax, rpareto, rrayleigh, rskellam, rslash
+\end{Soutput}
+\begin{Sinput}
+library(brms)
+\end{Sinput}
+\begin{Soutput}
+#> Warning: package 'brms' was built under R version 4.1.2
+\end{Soutput}
+\begin{Soutput}
+#> Loading required package: Rcpp
+\end{Soutput}
+\begin{Soutput}
+#> Warning: package 'Rcpp' was built under R version 4.1.2
+\end{Soutput}
+\begin{Soutput}
+#> Loading 'brms' package (version 2.17.0). Useful instructions
+#> can be found by typing help('brms'). A more detailed introduction
+#> to the package is available through vignette('brms_overview').
+\end{Soutput}
+\begin{Soutput}
+#> 
+#> Attaching package: 'brms'
+\end{Soutput}
+\begin{Soutput}
+#> The following objects are masked from 'package:VGAM':
+#> 
+#>     acat, cratio, cumulative, dfrechet, dirichlet, exponential,
+#>     frechet, geometric, lognormal, multinomial, negbinomial, pfrechet,
+#>     qfrechet, rfrechet, s, sratio
+\end{Soutput}
+\begin{Soutput}
+#> The following objects are masked from 'package:extraDistr':
+#> 
+#>     ddirichlet, dfrechet, pfrechet, qfrechet, rdirichlet, rfrechet
+\end{Soutput}
+\begin{Soutput}
+#> The following object is masked from 'package:stats':
+#> 
+#>     ar
+\end{Soutput}
+\begin{Sinput}
+library(numDeriv)
+\end{Sinput}
+\end{Schunk}
+
+\hypertarget{extradistr}{%
+\subsubsection{extraDistr}\label{extradistr}}
+
+\begin{Schunk}
+\begin{Sinput}
+library(extraDistr)
+set.seed(123)
+\end{Sinput}
+\end{Schunk}
+
 \hypertarget{countreg}{%
 \subsubsection{countreg}\label{countreg}}
 
@@ -75,7 +177,7 @@ x <- 1:10
 plot(x)
 \end{Sinput}
 
-\includegraphics{overview-single-source_files/figure-latex/unnamed-chunk-1-1} \end{Schunk}
+\includegraphics{overview-single-source_files/figure-latex/unnamed-chunk-3-1} \end{Schunk}
 
 \hypertarget{summary}{%
 \subsection{Summary}\label{summary}}

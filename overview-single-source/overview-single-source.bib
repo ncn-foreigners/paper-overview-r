@@ -19,7 +19,84 @@
 
 %% R packages to be cited
 
-%% single source models -- literature
+@Article{zeileis2008,
+  title = {Regression Models for Count Data in {R}},
+  author = {Achim Zeileis and Christian Kleiber and Simon Jackman},
+  journal = {Journal of Statistical Software},
+  year = {2008},
+  volume = {27},
+  number = {8},
+  pages = {1--25},
+  doi = {10.18637/jss.v027.i08},
+}
+
+@Manual{wolodzko2020,
+  title = {extraDistr: Additional Univariate and Multivariate Distributions},
+  author = {Tymoteusz Wolodzko},
+  year = {2020},
+  note = {R package version 1.9.1},
+  url = {https://CRAN.R-project.org/package=extraDistr},
+}
+
+@Article{burkner2017,
+  title = {{brms}: An {R} Package for {Bayesian} Multilevel Models Using {Stan}},
+  author = {Paul-Christian Bürkner},
+  journal = {Journal of Statistical Software},
+  year = {2017},
+  volume = {80},
+  number = {1},
+  pages = {1--28},
+  doi = {10.18637/jss.v080.i01},
+  encoding = {UTF-8},
+}
+
+
+@article{carpenter2017,
+ title={Stan: A Probabilistic Programming Language},
+ volume={76},
+ url={https://www.jstatsoft.org/index.php/jss/article/view/v076i01},
+ doi={10.18637/jss.v076.i01},
+ abstract={Stan is a probabilistic programming language for specifying statistical models. A Stan program imperatively defines a log probability function over parameters conditioned on specified data and constants. As of version 2.14.0, Stan provides full Bayesian inference for continuous-variable models through Markov chain Monte Carlo methods such as the No-U-Turn sampler, an adaptive form of Hamiltonian Monte Carlo sampling. Penalized maximum likelihood estimates are calculated using optimization methods such as the limited memory Broyden-Fletcher-Goldfarb-Shanno algorithm. Stan is also a platform for computing log densities and their gradients and Hessians, which can be used in alternative algorithms such as variational Bayes, expectation propagation, and marginal inference using approximate integration. To this end, Stan is set up so that the densities, gradients, and Hessians, along with intermediate quantities of the algorithm such as acceptance probabilities, are easily accessible. Stan can be called from the command line using the cmdstan package, through R using the rstan package, and through Python using the pystan package. All three interfaces support sampling and optimization-based inference with diagnostics and posterior analysis. rstan and pystan also provide access to log probabilities, gradients, Hessians, parameter transforms, and specialized plotting.},
+ number={1},
+ journal={Journal of Statistical Software},
+ author={Carpenter, Bob and Gelman, Andrew and Hoffman, Matthew D. and Lee, Daniel and Goodrich, Ben and Betancourt, Michael and Brubaker, Marcus and Guo, Jiqiang and Li, Peter and Riddell, Allen},
+ year={2017},
+ pages={1–32}
+}
+
+
+@Article{yee2010,
+  title = {The {VGAM} Package for Categorical Data Analysis},
+  author = {Thomas W. Yee},
+  journal = {Journal of Statistical Software},
+  year = {2010},
+  volume = {32},
+  number = {10},
+  pages = {1--34},
+  doi = {10.18637/jss.v032.i10},
+}
+
+@Article{yee2015p,
+  title = {The {VGAM} Package for Capture-Recapture Data Using the Conditional Likelihood},
+  author = {Thomas W. Yee and Jakub Stoklosa and Richard M. Huggins},
+  journal = {Journal of Statistical Software},
+  year = {2015},
+  volume = {65},
+  number = {5},
+  pages = {1--33},
+  doi = {10.18637/jss.v065.i05},
+}
+
+@Book{yee2015b,
+  title = {Vector Generalized Linear and Additive Models: With an Implementation in R},
+  author = {Thomas W. Yee},
+  year = {2015},
+  publisher = {Springer},
+  address = {New York, USA},
+}
+
+
+%% single source models -- literature (ztoi / oizt)
 
 @article{Bohning2022,
 author = {Böhning, Dankmar},
@@ -28,7 +105,7 @@ journal = {Biometrical Journal},
 volume = {n/a},
 number = {n/a},
 pages = {},
-year = {},
+year = {2022},
 keywords = {capture–recapture, inflation of singletons, one-inflation, population size estimation, zero-truncation},
 doi = {https://doi.org/10.1002/bimj.202100343},
 url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/bimj.202100343},

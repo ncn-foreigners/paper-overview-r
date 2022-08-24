@@ -50,6 +50,23 @@ knitr::include_graphics('Rlogo.pdf')
 
 In order to use truncated distributions we may use default functions truncaed at 0 
 
+Loading required packages
+
+```{r}
+library(extraDistr)
+library(countreg)
+library(VGAM)
+library(brms)
+library(numDeriv)
+```
+
+### extraDistr
+
+```{r}
+library(extraDistr)
+set.seed(123)
+```
+
 ### countreg
 
 `countreg` package includes function `zerotrunc`
