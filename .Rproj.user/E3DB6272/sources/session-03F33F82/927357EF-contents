@@ -16,3 +16,23 @@
 	Title = {R: A Language for Data Analysis and Graphics},
 	Volume = 5,
 	Year = 1996}
+
+%% R packages to be cited
+
+%% single source models -- literature
+
+@article{Bohning2022,
+author = {Böhning, Dankmar},
+title = {On the equivalence of one-inflated zero-truncated and zero-truncated one-inflated count data likelihoods},
+journal = {Biometrical Journal},
+volume = {n/a},
+number = {n/a},
+pages = {},
+year = {},
+keywords = {capture–recapture, inflation of singletons, one-inflation, population size estimation, zero-truncation},
+doi = {https://doi.org/10.1002/bimj.202100343},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/bimj.202100343},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/bimj.202100343},
+abstract = {Abstract One-inflation in zero-truncated count data has recently found considerable attention. There are currently two views in the literature. In the first approach, the untruncated model is considered as one-inflated whereas in the second approach the truncated model is viewed as one-inflated. Here, we show that both models have identical model spaces as well as identical maximum likelihoods. Consequences of population size estimation are illuminated, and the findings are illustrated at hand of two case studies.}
+}
+

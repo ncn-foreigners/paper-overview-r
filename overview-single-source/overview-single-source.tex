@@ -7,7 +7,11 @@ models}
 
 \abstract{%
 In this paper we provide an overview of R packages that allow to fit
-various single-source capture-recapture models.
+various single-source capture-recapture (SSCR) models. In genera, SSCR
+approaches assume that capture history follows certain distribution
+(e.g.~negative binomial, poisson, one-inflated poisson) but the
+observational data consist only positive counts i.e.~we observe zero
+truncated distributions.
 }
 
 \hypertarget{introduction}{%
@@ -20,9 +24,11 @@ Introductory section which may include references in parentheses
 \subsection{Single-source capture-recapture
 models}\label{single-source-capture-recapture-models}}
 
-\hypertarget{section-title-in-sentence-case}{%
-\subsection{Section title in sentence
-case}\label{section-title-in-sentence-case}}
+\citet{Bohning2022}
+
+\hypertarget{r-package-for-single-source-capture-recapture-model}{%
+\subsection{R package for single-source capture-recapture
+model}\label{r-package-for-single-source-capture-recapture-model}}
 
 This section may contain a figure such as Figure \ref{fig:Rlogo}.
 
@@ -37,8 +43,28 @@ This section may contain a figure such as Figure \ref{fig:Rlogo}.
 \end{figure}
 \end{Schunk}
 
-\hypertarget{another-section}{%
-\subsection{Another section}\label{another-section}}
+\hypertarget{truncated-discrete-distributions}{%
+\subsubsection{Truncated discrete
+distributions}\label{truncated-discrete-distributions}}
+
+In order to use truncated distributions we may use default functions
+truncaed at 0
+
+\hypertarget{countreg}{%
+\subsubsection{countreg}\label{countreg}}
+
+\texttt{countreg} package includes function \texttt{zerotrunc}
+
+\hypertarget{vgam}{%
+\subsubsection{VGAM}\label{vgam}}
+
+The most advanced
+
+\hypertarget{stan-and-brms}{%
+\subsubsection{stan and brms}\label{stan-and-brms}}
+
+\hypertarget{case-studies}{%
+\subsection{Case studies}\label{case-studies}}
 
 There will likely be several sections, perhaps including code snippets,
 such as:
@@ -59,33 +85,6 @@ This file is only a basic article template. For full details of
 article for submission, see the
 \href{https://journal.r-project.org/share/author-guide.pdf}{Instructions
 for Authors}.
-
-\hypertarget{about-this-format-and-the-r-journal-requirements}{%
-\subsubsection{About this format and the R Journal
-requirements}\label{about-this-format-and-the-r-journal-requirements}}
-
-\texttt{rticles::rjournal\_article} will help you build the correct
-files requirements:
-
-\begin{itemize}
-\tightlist
-\item
-  A R file will be generated automatically using \texttt{knitr::purl} -
-  see \url{https://bookdown.org/yihui/rmarkdown-cookbook/purl.html} for
-  more information.
-\item
-  A tex file will be generated from this Rmd file and correctly included
-  in \texttt{RJwapper.tex} as expected to build \texttt{RJwrapper.pdf}.
-\item
-  All figure files will be kept in the default rmarkdown
-  \texttt{*\_files} folder. This happens because
-  \texttt{keep\_tex\ =\ TRUE} by default in
-  \texttt{rticles::rjournal\_article}
-\item
-  Only the bib filename is to modifed. An example bib file is included
-  in the template (\texttt{RJreferences.bib}) and you will have to name
-  your bib file as the tex, R, and pdf files.
-\end{itemize}
 
 \bibliography{overview-single-source.bib}
 

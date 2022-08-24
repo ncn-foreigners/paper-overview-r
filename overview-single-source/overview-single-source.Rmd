@@ -36,6 +36,7 @@ Introductory section which may include references in parentheses [@R], or cite a
 
 ## Single-source capture-recapture models
 
+@Bohning2022
 
 ## R package for single-source capture-recapture model
 
@@ -51,11 +52,15 @@ In order to use truncated distributions we may use default functions truncaed at
 
 ### countreg
 
+`countreg` package includes function `zerotrunc`
+
 ### VGAM
 
 The most advanced
 
-### brms and stan
+### stan and brms
+
+
 
 ## Case studies
 
