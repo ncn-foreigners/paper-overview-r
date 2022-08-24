@@ -90,3 +90,6 @@ plot(x)
 
 This file is only a basic article template. For full details of *The R Journal* style and information on how to prepare your article for submission, see the [Instructions for Authors](https://journal.r-project.org/share/author-guide.pdf).
 
+## Acknowledgement
+
+This work was financially supported by the NCN OPUS 22 grant no. 2020/39/B/HS4/00941.
