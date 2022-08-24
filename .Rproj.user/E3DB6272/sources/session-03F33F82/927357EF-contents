@@ -95,6 +95,24 @@
   address = {New York, USA},
 }
 
+%% implementation in R
+
+@article{ian2018,
+author = {Inan, Gul},
+title = {One-inflation and unobserved heterogeneity in population size estimation by Ryan T. Godwin},
+journal = {Biometrical Journal},
+volume = {60},
+number = {4},
+pages = {859-864},
+keywords = {count data, mean parameterization, one-inflation, zero-truncation},
+doi = {https://doi.org/10.1002/bimj.201700261},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/bimj.201700261},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/bimj.201700261},
+abstract = {Abstract In this study, we would like to show that the one-inflated zero-truncated negative binomial (OIZTNB) regression model can be easily implemented in R via built-in functions when we use mean-parameterization feature of negative binomial distribution to build OIZTNB regression model. From the practitioners' point of view, we believe that this approach presents a computationally convenient way for implementation of the OIZTNB regression model.},
+year = {2018}
+}
+
+
 
 %% single source models -- literature (ztoi / oizt)
 
@@ -111,5 +129,22 @@ doi = {https://doi.org/10.1002/bimj.202100343},
 url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/bimj.202100343},
 eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/bimj.202100343},
 abstract = {Abstract One-inflation in zero-truncated count data has recently found considerable attention. There are currently two views in the literature. In the first approach, the untruncated model is considered as one-inflated whereas in the second approach the truncated model is viewed as one-inflated. Here, we show that both models have identical model spaces as well as identical maximum likelihoods. Consequences of population size estimation are illuminated, and the findings are illustrated at hand of two case studies.}
+}
+
+%% single source bayesian
+
+@article{tuoto2022,
+author = {Tuoto, Tiziana and Di Cecco, Davide and Tancredi, Andrea},
+title = {Bayesian analysis of one-inflated models for elusive population size estimation},
+journal = {Biometrical Journal},
+volume = {64},
+number = {5},
+pages = {912-933},
+keywords = {Bayesian model selection, capture–recapture, illegal populations, zero-truncated one-inflated count data models},
+doi = {https://doi.org/10.1002/bimj.202100187},
+url = {https://onlinelibrary.wiley.com/doi/abs/10.1002/bimj.202100187},
+eprint = {https://onlinelibrary.wiley.com/doi/pdf/10.1002/bimj.202100187},
+abstract = {Abstract The identification and treatment of “one-inflation” in estimating the size of an elusive population has received increasing attention in capture–recapture literature in recent years. The phenomenon occurs when the number of units captured exactly once clearly exceeds the expectation under a baseline count distribution. Ignoring one-inflation has serious consequences for estimation of the population size, which can be drastically overestimated. In this paper we propose a Bayesian approach for Poisson, geometric, and negative binomial one-inflated count distributions. Posterior inference for population size will be obtained applying a Gibbs sampler approach. We also provide a Bayesian approach to model selection. We illustrate the proposed methodology with simulated and real data and propose a new application in official statistics to estimate the number of people implicated in the exploitation of prostitution in Italy.},
+year = {2022}
 }
 
